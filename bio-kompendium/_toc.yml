@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: ch2-dna_rna_protein
+  - file: ch3-recombinant_dna_technology
+  - file: ch10-recombinant_proteins
+  - file: ch12-environmental_biotechnology
+  - file: ch13-synthetic_biology
+  - file: ch15-transgenic_plants_and_plant_biotechnology
+  - file: ch17-inherited_defects_and_gene_therapy
+  - file: ch18-cloning_and_stem_cells
+  - file: ch24-bioethics_in_biotechnology
+  - file: definisjoner
