@@ -6,13 +6,9 @@ name: deploy-bio
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-    paths:
-      - bio-kompendium/
+    branches: [master]
   pull_request:
-    branches: [ master ]
-    paths: 
-      - bio-kompendium/
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -42,7 +38,6 @@ jobs:
       # Build the book
       - name: Build the book
         run: |
-          cd ./bio-kompendium
           jupyter-book build .
 
       # Push the book's HTML to github-pages
@@ -50,4 +45,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./bio-kompendium/_build/html
+          publish_dir: ./_build/html
