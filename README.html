@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kapittel 10: Rekombinante Proteiner &#8212; Kompendium Bioteknologi</title>
+    <title>Jupyter Notebook kompendium &#8212; Kompendium Bioteknologi</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Chapter 12: Environmental biotechnology" href="ch12-environmental_biotechnology.html" />
-    <link rel="prev" title="Kapittel 3: Rekombinant DNA-Teknologi" href="ch3-recombinant_dna_technology.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -98,7 +96,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="ch2-dna_rna_protein.html">
    Kapittel 2: DNA, RNA og proteiner
@@ -109,8 +107,8 @@ const thebe_selector_output = ".output, .cell_output"
    Kapittel 3: Rekombinant DNA-Teknologi
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ch10-recombinant_proteins.html">
    Kapittel 10: Rekombinante Proteiner
   </a>
  </li>
@@ -190,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/ch10-recombinant_proteins.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/README.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -210,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch10-recombinant_proteins.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -237,16 +235,14 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eukaryotiske-gener-i-prokaryotiske-vektorer">
-   Eukaryotiske gener i prokaryotiske vektorer
+  <a class="reference internal nav-link" href="#utvikling">
+   Utvikling
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cdna">
-     cDNA
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#til-de-ikke-sa-teknisk-anlagte">
+   Til de ikke-så-teknisk-anlagte
+  </a>
  </li>
 </ul>
 
@@ -258,7 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Kapittel 10: Rekombinante Proteiner</h1>
+                <h1>Jupyter Notebook kompendium</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -269,16 +265,14 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eukaryotiske-gener-i-prokaryotiske-vektorer">
-   Eukaryotiske gener i prokaryotiske vektorer
+  <a class="reference internal nav-link" href="#utvikling">
+   Utvikling
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cdna">
-     cDNA
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#til-de-ikke-sa-teknisk-anlagte">
+   Til de ikke-så-teknisk-anlagte
+  </a>
  </li>
 </ul>
 
@@ -289,28 +283,23 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="kapittel-10-rekombinante-proteiner">
-<h1>Kapittel 10: Rekombinante Proteiner<a class="headerlink" href="#kapittel-10-rekombinante-proteiner" title="Permalink to this headline">¶</a></h1>
-<p>For å lage <a class="reference internal" href="definisjoner.html#rekombinant"><span class="std std-ref">rekombinante</span></a> proteiner blir genen isolert og klonet til en <a class="reference internal" href="definisjoner.html#genuttrykking"><span class="std std-ref">uttrykking</span></a>s<a class="reference internal" href="definisjoner.html#vektor"><span class="std std-ref">vektor</span></a>. Det vanligste i praksis er å sette menneskegener inn i en annen organisme som f.eks. en bakterie eller i gjærsopp.</p>
-<p>Proteiner som blir produsert av rekombinant tekonlogi ligger ofte i en av fire kategorier:</p>
-<ol class="simple">
-<li><p>Erstatninger for proteiner som er mangelfulle eller defekte.</p></li>
-<li><p>Økning av mengden av et protein som allerede er til stede.</p></li>
-<li><p>Inhibering av skumle saker som bakterier eller virus.</p></li>
-<li><p>Bærere for andre molekyler (fortsatt i utvikling).</p></li>
-</ol>
-<p>I industrien er det ønskelig å lage så mye protein som mulig så billig som mulig. Da kan man bruke en plasmid med mange kopier av den samme genen for å få mange kopier av proteinet per transkripsjon-translasjon-syklus. Et problem med dette er at DNA med mye repetisjon (som disse plasmidene har) er svært ustabilt. En løsning på det igjen er å gjøre plasmidet antibiotikaresistant og drepe alt annet i miljøet med antibiotika, men antibiotika er dyrt.</p>
-<div class="section" id="eukaryotiske-gener-i-prokaryotiske-vektorer">
-<h2>Eukaryotiske gener i prokaryotiske vektorer<a class="headerlink" href="#eukaryotiske-gener-i-prokaryotiske-vektorer" title="Permalink to this headline">¶</a></h2>
-<p>En vil ofte uttrykke <a class="reference internal" href="definisjoner.html#eukaryot"><span class="std std-ref">eukaryotiske</span></a> gener (forskjellige grunner, men deg gir mening ettersom vi er eukaryoter). Det går an å gro eukaryotiske gener i eukaryotiske celler (som gjær), men vi har bedre kjennskap til <a class="reference internal" href="definisjoner.html#prokaryot"><span class="std std-ref">prokaryotiske</span></a> celler (bakterier), så de er enklere å manipulere. For å produsere eukaryotiske gener i prokaryotiske vektorer må man gjøre et par inngrep:</p>
-<div class="section" id="cdna">
-<span id="id1"></span><h3>cDNA<a class="headerlink" href="#cdna" title="Permalink to this headline">¶</a></h3>
-<p>Eukaryotisk DNA inneholder i tillegg til kodende DNA promoter-sekvenser og <a class="reference internal" href="definisjoner.html#introner"><span class="std std-ref">introner</span></a>. cDNA er det samme DNAet, men uten disse tingene. cDNA brukes ofte også i eukaryotiske vektorer rett og slett fordi du får en kortere gensekvens.</p>
-<div class="admonition-promoter-sekvenser admonition">
-<p class="admonition-title">Promoter-sekvenser</p>
-<p>Prokaryoter forstår ikke eukaryotiske promoter-sekvenser, så vi må ta de ut og erstatte de med prokaryotiske promoter-sekvenser. Disse kommer gjerne fra vektoren vi skal bruke.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-notebook-kompendium">
+<h1>Jupyter Notebook kompendium<a class="headerlink" href="#jupyter-notebook-kompendium" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://iverks.github.io/bio-kompendium"><img alt="Jupyter Book Badge" src="https://jupyterbook.org/badge.svg" /></a></p>
+<p>Dette kompendiet er laget med <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">jupyter-book</a>, og <a class="reference external" href="https://iverks.github.com/bio-kompendium">nettsiden</a> hostes gratis på github pages og oppdateres automatisk når endringer skjer ved hjelp av github actions. Om du er en fremtidig student som ønsker å rette en skrivefeil eller fullføre noe av det som jeg sikkert ikke har skrevet helt ferdig kan du gjøre det ved å klone eller forke repoet og så åpne en pull-request. Jeg kommer nok til å godkjenne det meste.</p>
+<p>Kompendiet kan også <a class="reference external" href="https://jupyterbook.org/en/stable/advanced/pdf.html">kompileres til latex</a> om det er den foretrukkede måten å distribuere det på.</p>
+<div class="section" id="utvikling">
+<h2>Utvikling<a class="headerlink" href="#utvikling" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter books er skrevet i Markdown. Om du er en flittig bruker av <a class="reference external" href="http://www.timini.no">www.timini.no</a> (slik du bør) har du god kjennskap til dette, men uansett: <a class="reference external" href="https://jupyterbook.org/en/stable/reference/cheatsheet.html">her er en cheatsheet</a>. Merk også at jupyter books har en utvidet markdown-syntax, spesielt nyttig er <a class="reference external" href="https://jupyterbook.org/en/stable/reference/cheatsheet.html#target-headers">target headers</a> med <a class="reference external" href="https://jupyterbook.org/en/stable/reference/cheatsheet.html#referencing-target-headers">tilhørende lenker</a> , <a class="reference external" href="https://jupyterbook.org/en/stable/reference/cheatsheet.html#figures-and-images">figures</a> og <a class="reference external" href="https://jupyterbook.org/en/stable/reference/cheatsheet.html#admonitions">admonitions</a>.</p>
+<p>For å kompilere boken lokalt til testing må du installere <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> med pip (eller conda), så kjører du kommandoen</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jupyter-book build .</span>
+</pre></div>
 </div>
+<p>ikke glem <code class="docutils literal notranslate"><span class="pre">.</span></code>. <code class="docutils literal notranslate"><span class="pre">jb</span></code> kan brukes som forkortelse for <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code>.</p>
 </div>
+<div class="section" id="til-de-ikke-sa-teknisk-anlagte">
+<h2>Til de ikke-så-teknisk-anlagte<a class="headerlink" href="#til-de-ikke-sa-teknisk-anlagte" title="Permalink to this headline">¶</a></h2>
+<p>Om du har en ide til noe å fikse, men ikke er gira på å sette opp jupyter-book osv. Opprett gjerne en <a class="reference external" href="https://github.com/iverks/bio-kompendium/issues">issue</a>, og skriv inn endringen du er gira på, så kan noen som er mer teknisk anlagt få gratis aktivitetspoeng i github for å copy-paste teksten din inn i kildekoden. Det finnes også en knapp for å opprette issues oppe i høyre hjørne på nettsiden.</p>
 </div>
 </div>
 
@@ -338,21 +327,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="ch3-recombinant_dna_technology.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Kapittel 3: Rekombinant DNA-Teknologi</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="ch12-environmental_biotechnology.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 12: Environmental biotechnology</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

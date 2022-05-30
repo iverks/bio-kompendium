@@ -2,6 +2,18 @@
 
 Denne siden er ikke ment for å bli lest fra topp til bunn, men inneholder en samling av definisjoner som jeg syntes var vanskelige å huske.
 
+(prokaryot)=
+
+## Prokaryot celle
+
+Pro: før, karyot: kjerne. Førkjerne celle. En prokaryot er et vesen som har celler uten cellekjerner. Kjente prokaryoter er bakterier.
+
+(eukaryot)=
+
+## Eukaryot celle
+
+Eu: bra, karyot: kjerne. Bra-kjærne-celle. En celle som har kjerne. Er mer avanserte enn prokaryoter, og det meste av det du tenker på som "liv" er eukaryoter. Gjærsopp er ofte brukt innen forskning på eukaryoter fordi de har så korte generasjoner, og dermed tillater raskere forsøk.
+
 (antiparallell)=
 
 ## Antiparallell
@@ -52,9 +64,27 @@ width: 400px
 Tellesystemet for pentosene ribose og deoksyribose. Merk her at grunnen til at vi teller i den retningen er at den aktive gruppen - A, T, G eller C - binder seg ved kondensasjonsreaksjon på plasseringen 1'. Det er dermed naturlig å kalle den for 1'.
 ```
 
+### Eukaryotisk DNA
+
+Eukaryotisk DNA er mer komplisert enn prokaryotisk DNA. Det består av [introner](introner) og [eksoner](eksoner).
+
+(introner)=
+
+#### Introner
+
+Introner er sekvenser med DNA som ikke koder for noe som helst som skiller [eksoner](eksoner) fra hverandre.
+
+(eksoner)=
+
+#### Eksoner
+
+Eksoner er sekvenser med DNA som koder for gener. I eukaryotisk DNA koder et ekson for ett gen (stemmer ikke men det var et eller annet om at prokaryoter har flere gener i en sekvens)
+
 (RNA)=
 
 ## RNA
+
+todo
 
 (virus)=
 
@@ -105,10 +135,21 @@ Translasjon \(må ei blandes med [transkribering](transkribering)\) er prosessen
 
 Genuttrykking er en prosess der informasjonen i et gen kommer til uttrykk. Selve prosessen innebærer både [translasjon](translasjon) og [transkribering](transkribering), men betegnelsen genuttrykking brukes ofte der man ikke trenger å forstå mekanismen bak det.
 
+(kodoner)=
+
+## Kodoner
+
+Kodoner er sekvenser på tre baser i DNA eller RNA som tilsvarer enten en aminosyre eller en stoppsekvens.
+
+```{admonition} Hvorfor tre?
+Det finnes 20 aminosyrer, pluss en stoppsekvens blir 21. Dersom et kodon var 2 langt, hadde vi hatt $4^2=16$ mulige koder, som ikke holder til alle aminosyrene. Det vi har i stedet er $4^3=64$ muligheter. Dette åpner åpenbart for "redundancy", altså koder som betyr det samme. For cellene betyr det at de er litt mer feiltolerante. Forskere har også utnyttet dette for å lage celler som er immune mot virus. (Jeg har mistet kilden min til dette men det er veldig kult)
+```
+
 (hybridisering)=
 
 ## Hybridisering
 
+Hybridisering betyr generelt sett å blande to ting for å få en hybrid.  
 DNA-hybridisering er paring mellom to enkelttrådede DNA-biter som er [komplementære.](komplementaer) Hybridisering kan også skje i DNA-tråder som ikke er fullstendig komplementære, men de basene som ikke passer overens vil ikke binde seg og det er derfor ikke like stabilt. Bitene vil derfor falle fra hverandre \([denaturere](denaturere)\).
 
 (rekombinant)=
