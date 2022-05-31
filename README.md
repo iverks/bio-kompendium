@@ -1,6 +1,6 @@
 # Jupyter Notebook kompendium
 
-‼️ Dette kompendiet ble jeg aldri ferdig med, men jeg lar det stå så jeg har en mal til eventuelle kompendier i fremtiden !!
+‼️ Dette kompendiet ble jeg aldri ferdig med, men jeg lar det stå så jeg har en mal til eventuelle kompendier i fremtiden ‼️
 
 [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://iverks.github.io/bio-kompendium)
 
