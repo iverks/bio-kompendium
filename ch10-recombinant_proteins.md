@@ -24,3 +24,20 @@ Eukaryotisk DNA inneholder i tillegg til kodende DNA promoter-sekvenser og [intr
 ```{admonition} Promoter-sekvenser
 Prokaryoter forstår ikke eukaryotiske promoter-sekvenser, så vi må ta de ut og erstatte de med prokaryotiske promoter-sekvenser. Disse kommer gjerne fra vektoren vi skal bruke.
 ```
+
+(redundant-kodon-historie)=
+
+## Valg av (redundant) kodon
+
+Det er kjent at mange [kodoner](kodon) korresponderer til den samme aminosyren. Noen celler bruker gitte sekvenser mer enn andre. F.eks. e. coli bruker AAA oftere enn den bruker AAG til å enkode aminosyren lysin. Det som oversetter et kodon til en aminosyre er T-RNA, og om en celle har lite av det spesifikke tRNA som oversetter en sekvens kan dette være en begrensende faktor for [translasjon](translasjon) av dette.
+
+```{admonition} Virus-immune celler
+Forskere har laget celler som er immune mot virus ved å bytte ut alle variasjoner av en type kodon med et spesifikt et (altså at alle AAA + AAG -> AAA). De har så fjernet alt av tRNA som oversetter alle de andre kodonene. Dette betyr at når det kommer et fremmed gen (virus) inn i cellen, som etter all sannsynlighet inneholder minst en av den andre typen kodon, blir ikke virusgenene uttrykt. Cellen er dermed immun mot alle typer virus.
+
+~Jeg har mistet kilden min for dette så ikke ta meg på ordet~
+```
+
+Dette er ikke et problem i naturen fordi naturlig utvalg har gjort slik at mengden tRNA og de valgte kodoner stemmer godt overens. I rekombinante vektorer kan det derimot være et problem. Det finnes to løsninger:
+
+1. Bytte ut disse kodonene med kodoner der det finnes mye tilhørende tRNA. Dette er arbeidsomt, og DNAet må produseres kunstig.
+2. Tilfør tRNA som hører til det begrensende kodonet. Gir litt dårligere resultater enn det andre forslaget.
