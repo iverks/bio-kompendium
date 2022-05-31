@@ -248,6 +248,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#valg-av-redundant-kodon">
+   Valg av (redundant) kodon
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -280,6 +285,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#valg-av-redundant-kodon">
+   Valg av (redundant) kodon
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -311,6 +321,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Prokaryoter forstår ikke eukaryotiske promoter-sekvenser, så vi må ta de ut og erstatte de med prokaryotiske promoter-sekvenser. Disse kommer gjerne fra vektoren vi skal bruke.</p>
 </div>
 </div>
+</div>
+<div class="section" id="valg-av-redundant-kodon">
+<span id="redundant-kodon-historie"></span><h2>Valg av (redundant) kodon<a class="headerlink" href="#valg-av-redundant-kodon" title="Permalink to this headline">¶</a></h2>
+<p>Det er kjent at mange <a class="reference internal" href="definisjoner.html#kodon"><span class="std std-ref">kodoner</span></a> korresponderer til den samme aminosyren. Noen celler bruker gitte sekvenser mer enn andre. F.eks. e. coli bruker AAA oftere enn den bruker AAG til å enkode aminosyren lysin. Det som oversetter et kodon til en aminosyre er T-RNA, og om en celle har lite av det spesifikke tRNA som oversetter en sekvens kan dette være en begrensende faktor for <a class="reference internal" href="definisjoner.html#translasjon"><span class="std std-ref">translasjon</span></a> av dette.</p>
+<div class="admonition-virus-immune-celler admonition">
+<p class="admonition-title">Virus-immune celler</p>
+<p>Forskere har laget celler som er immune mot virus ved å bytte ut alle variasjoner av en type kodon med et spesifikt et (altså at alle AAA + AAG -&gt; AAA). De har så fjernet alt av tRNA som oversetter alle de andre kodonene. Dette betyr at når det kommer et fremmed gen (virus) inn i cellen, som etter all sannsynlighet inneholder minst en av den andre typen kodon, blir ikke virusgenene uttrykt. Cellen er dermed immun mot alle typer virus.</p>
+<p>~Jeg har mistet kilden min for dette så ikke ta meg på ordet~</p>
+</div>
+<p>Dette er ikke et problem i naturen fordi naturlig utvalg har gjort slik at mengden tRNA og de valgte kodoner stemmer godt overens. I rekombinante vektorer kan det derimot være et problem. Det finnes to løsninger:</p>
+<ol class="simple">
+<li><p>Bytte ut disse kodonene med kodoner der det finnes mye tilhørende tRNA. Dette er arbeidsomt, og DNAet må produseres kunstig.</p></li>
+<li><p>Tilfør tRNA som hører til det begrensende kodonet. Gir litt dårligere resultater enn det andre forslaget.</p></li>
+</ol>
 </div>
 </div>
 

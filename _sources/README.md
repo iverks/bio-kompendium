@@ -1,5 +1,7 @@
 # Jupyter Notebook kompendium
 
+‼️ Dette kompendiet ble jeg aldri ferdig med, men jeg lar det stå så jeg har en mal til eventuelle kompendier i fremtiden ‼️
+
 [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://iverks.github.io/bio-kompendium)
 
 Dette kompendiet er laget med [jupyter-book](https://jupyterbook.org/en/stable/intro.html), og [nettsiden](https://iverks.github.com/bio-kompendium) hostes gratis på github pages og oppdateres automatisk når endringer skjer ved hjelp av github actions. Om du er en fremtidig student som ønsker å rette en skrivefeil eller fullføre noe av det som jeg sikkert ikke har skrevet helt ferdig kan du gjøre det ved å klone eller forke repoet og så åpne en pull-request. Jeg kommer nok til å godkjenne det meste.
