@@ -1,1 +1,2 @@
 jupyter-book==0.12.3
+traitlets==5.2.1.post0
